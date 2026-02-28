@@ -2,8 +2,8 @@ from crewai import Agent, Task, Crew, Process, LLM
 from crewai.tools import tool
 from crewai.knowledge.source.string_knowledge_source import StringKnowledgeSource
 import agentops
-from google.colab import userdata
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
 from typing import List
 
 from tavily import TavilyClient
@@ -12,12 +12,14 @@ from scrapegraph_py import Client
 import os
 import json
 
-os.environ['OPENAI_API_KEY'] = userdata.get('openai-colab')
-os.environ['AGENTOPS_API_KEY'] = userdata.get('agentops-colab')
-os.environ['GROQ_API_KEY'] = userdata.get('groq-colab') # Add this line to load Groq API key
+load_dotenv()
+
+os.environ['OPENAI_API_KEY'] 
+os.environ['AGENTOPS_API_KEY']
+os.environ['GROQ_API_KEY']  # Add this line to load Groq API key
 
 agentops.init(
-    api_key=userdata.get('agentops-colab'),
+    api_key=os.environ['AGENTOPS_API_KEY'],
     skip_auto_end_session=True # the default is Flase so the agent can stop the session anytime
 )
 
@@ -25,16 +27,17 @@ output_dir = '.\ai-agent-output'
 os.makedirs(output_dir, exist_ok=True)
 
 basic_llm = LLM(
-    model="all-MiniLM-L6-v2",
+    model="groq/llama-3.1-8b-instant",
     api_key=os.environ['GROQ_API_KEY'],
     temperature=0
 )
 
-search_client = TavilyClient(api_key=userdata.get('tvly-search'))
-scrape_client = Client(api_key=userdata.get('scrapegraph'))
+search_client = TavilyClient(api_key=os.environ['GROQ_API_KEY'])
+scrape_client = Client(api_key=os.environ['SCRAPEGRAPH_API_KEY'])
 
-from google.colab import drive
-drive.mount('/content/drive')
+output_dir = './ai-agent-output'
+os.makedirs(output_dir, exist_ok=True)
+
 
 no_keywords = 10
 
