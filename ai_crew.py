@@ -14,29 +14,23 @@ import json
 
 load_dotenv()
 
-os.environ['OPENAI_API_KEY'] 
-os.environ['AGENTOPS_API_KEY']
-os.environ['GROQ_API_KEY']  # Add this line to load Groq API key
 
 agentops.init(
     api_key=os.environ['AGENTOPS_API_KEY'],
     skip_auto_end_session=True # the default is Flase so the agent can stop the session anytime
 )
 
-output_dir = '.\ai-agent-output'
+output_dir = './ai-agent-output'
 os.makedirs(output_dir, exist_ok=True)
 
 basic_llm = LLM(
-    model="groq/llama-3.1-8b-instant",
+    model="groq/llama-3.3-70b-versatile",
     api_key=os.environ['GROQ_API_KEY'],
     temperature=0
 )
 
-search_client = TavilyClient(api_key=os.environ['GROQ_API_KEY'])
+search_client = TavilyClient(api_key=os.environ['TVLY_API_KEY'])
 scrape_client = Client(api_key=os.environ['SCRAPEGRAPH_API_KEY'])
-
-output_dir = './ai-agent-output'
-os.makedirs(output_dir, exist_ok=True)
 
 
 no_keywords = 10
@@ -225,40 +219,4 @@ procurement_report_task = Task(
     expected_output="A professional HTML page for the procurement report.",
     output_file=os.path.join(output_dir, "step_4_procurement_report.html"),
     agent=procurement_report_agent,
-)
-
-"""## Running AI Crew"""
-
-rankyx_crew = Crew(
-    agents=[
-        recommender_agent,
-        search_engine_agent,
-        scraping_agent,
-        procurement_report_agent
-        ],
-
-    tasks=[
-        recommender_agent_task,
-        search_engine_task,
-        scraping_task,
-        procurement_report_task
-        ],
-
-    process=Process.sequential,
-    knowledge_sources=[
-        company_context
-        ]
-)
-
-crew_results= rankyx_crew.kickoff(
-    inputs={
-        'product_name': 'coffee machine for the office',
-        'website_list': ['www.amazon.eg', 'www.jumia.eg', 'www.noon.com?egypt-en'],
-        'no_keywords': no_keywords,
-        'country_name': 'Egypt',
-        'language': 'Arabic',
-        'score_th': 0.10,
-        'top_recommendations_no': 5
-
-        }
 )
