@@ -1,0 +1,8 @@
+python==3.12
+crewai[tools]==0.95.0
+agentops
+
+tavily-python
+
+scrapegraph-py
+pydantic
