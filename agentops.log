@@ -1,0 +1,48 @@
+2026-03-01 01:15:43,077 - ERROR - Failed to instrument CrewaiInstrumentor for agentops.instrumentation.agentic.crewai: No module named 'crewai.utilities.tool_utils'
+Traceback (most recent call last):
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\agentops\instrumentation\__init__.py", line 511, in instrument_one
+    instrumentor.instrument(tracer_provider=tracer.provider)
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\opentelemetry\instrumentation\instrumentor.py", line 125, in instrument
+    result = self._instrument(  # pylint: disable=assignment-from-no-return
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\agentops\instrumentation\common\instrumentor.py", line 63, in _instrument
+    self._custom_wrap(**kwargs)
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\agentops\instrumentation\agentic\crewai\instrumentation.py", line 129, in _custom_wrap
+    wrap_function_wrapper(
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\wrapt\patches.py", line 114, in wrap_function_wrapper
+    return wrap_object(module, name, FunctionWrapper, (wrapper,))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\wrapt\patches.py", line 60, in wrap_object
+    (parent, attribute, original) = resolve_path(module, name)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\wrapt\patches.py", line 17, in resolve_path
+    __import__(module)
+  File "C:\Users\CONNECT\miniconda3\envs\Procurement-Agent\Lib\site-packages\agentops\instrumentation\__init__.py", line 387, in _import_monitor
+    module = _original_builtins_import(name, globals_dict, locals_dict, fromlist, level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'crewai.utilities.tool_utils'
+2026-03-01 01:15:43,095 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=8d9ff019a5e830da3248a11284067d4d
+2026-03-01 01:15:48,314 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2026-03-01 01:15:50,211 - WARNING - record() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2026-03-01 01:16:09,526 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10959, Requested 3930. Please try again in 14.445s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,186 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11977, Requested 1709. Please try again in 8.43s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,362 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,429 - ERROR - Error in span Search Engine Agent.agent: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,490 - ERROR - Error in span Search Engine Agent.agent: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,557 - ERROR - Error in span Search Engine Agent.agent: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,633 - ERROR - Error in span The task is to search for products based on the suggested search queries
+You have to collect results from multiple search queries
+The search query must reach an ecommerece webpage for product
+Ignore any susbisious links or not an ecommerce website link
+Ignore any search results with confidence score less than (0.1)
+The search results will be used to compare prices of products from different websites..task: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:13,697 - ERROR - Error in span crewai.workflow: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjfky7dqeeev1mbtmw5j95gr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11942, Requested 617. Please try again in 2.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-03-01 01:16:15,752 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=8d9ff019a5e830da3248a11284067d4d
