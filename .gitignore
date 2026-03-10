@@ -1,4 +1,5 @@
 .env
+agentops.logs
 
 settings.json
 **/__pycache__/
