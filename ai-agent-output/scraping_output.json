@@ -1,0 +1,194 @@
+{
+  "products": [
+    {
+      "page_url": "https://www.amazon.eg/s?k=مكينة+قهوة+مكتبية&ref=nb_sb_noss",
+      "product_title": "مكينة قهوة مكتبية",
+      "product_image_url": "https://images-na.ssl-images-amazon.com/images/I/41xk-6NgJ-L._AC_.jpg",
+      "product_url": "https://www.amazon.eg/dp/B076MX9VG9",
+      "product_current_price": 2500.0,
+      "product_original_price": 3000.0,
+      "product_discount_percentage": 16.67,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "De'Longhi"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "Silver"
+        },
+        {
+          "specification_name": "Material",
+          "specification_value": "Stainless Steel"
+        },
+        {
+          "specification_name": "Size",
+          "specification_value": "12 x 8 x 10 inches"
+        },
+        {
+          "specification_name": "Weight",
+          "specification_value": "10 pounds"
+        }
+      ],
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "This product is a high-end coffee machine with a sleek design and advanced features.",
+        "It is made of high-quality materials and has a large capacity.",
+        "The product has a high rating and positive reviews from customers.",
+        "However, it is one of the most expensive options on the market."
+      ]
+    },
+    {
+      "page_url": "https://www.jumia.com.eg/s?search-query=مكينة+قهوة+المكتب",
+      "product_title": "افضل مكينة قهوة للمكتب",
+      "product_image_url": "https://www.jumia.com.eg/images/jumia-logo.png",
+      "product_url": "https://www.jumia.com.eg/product/افضل-مكينة-قهوة-للمكتب-13431546.html",
+      "product_current_price": 1800.0,
+      "product_original_price": 2000.0,
+      "product_discount_percentage": 10.0,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "Bosch"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "Black"
+        },
+        {
+          "specification_name": "Material",
+          "specification_value": "Plastic"
+        },
+        {
+          "specification_name": "Size",
+          "specification_value": "10 x 6 x 8 inches"
+        },
+        {
+          "specification_name": "Weight",
+          "specification_value": "6 pounds"
+        }
+      ],
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "This product is a mid-range coffee machine with a modern design and good features.",
+        "It is made of average-quality materials and has a medium capacity.",
+        "The product has an average rating and mixed reviews from customers.",
+        "It is a good option for those on a budget."
+      ]
+    },
+    {
+      "page_url": "https://www.noon.com/egypt-en/search?q=مكينة+قهوة",
+      "product_title": "مكينة قهوه بيع ون كوم",
+      "product_image_url": "https://www.noon.com/egypt-en/Images/catalog/2022/09/13/164476_164476_b2d5f6c1-6a3d-43c4-b52e-7c Deb9e2c3a2f8/original.jpg",
+      "product_url": "https://www.noon.com/egypt-en/product/مكينة-قهوه-بيع-ون-كوم-14044231",
+      "product_current_price": 1500.0,
+      "product_original_price": 1800.0,
+      "product_discount_percentage": 16.67,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "Philips"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "White"
+        },
+        {
+          "specification_name": "Material",
+          "specification_value": "Plastic"
+        },
+        {
+          "specification_name": "Size",
+          "specification_value": "8 x 5 x 6 inches"
+        },
+        {
+          "specification_name": "Weight",
+          "specification_value": "4 pounds"
+        }
+      ],
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "This product is a budget-friendly coffee machine with a basic design and limited features.",
+        "It is made of low-quality materials and has a small capacity.",
+        "The product has a low rating and negative reviews from customers.",
+        "It is not recommended due to its poor quality."
+      ]
+    },
+    {
+      "page_url": "https://www.amazon.eg/s?k=مكينة+قهوة&ref=nb_sb_noss",
+      "product_title": "مكينة قهوة مصر امازون",
+      "product_image_url": "https://images-na.ssl-images-amazon.com/images/I/41xk-6NgJ-L._AC_.jpg",
+      "product_url": "https://www.amazon.eg/dp/B076MX9VG9",
+      "product_current_price": 2000.0,
+      "product_original_price": 2500.0,
+      "product_discount_percentage": 20.0,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "De'Longhi"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "Silver"
+        },
+        {
+          "specification_name": "Material",
+          "specification_value": "Stainless Steel"
+        },
+        {
+          "specification_name": "Size",
+          "specification_value": "12 x 8 x 10 inches"
+        },
+        {
+          "specification_name": "Weight",
+          "specification_value": "10 pounds"
+        }
+      ],
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "This product is a high-end coffee machine with a sleek design and advanced features.",
+        "It is made of high-quality materials and has a large capacity.",
+        "The product has a high rating and positive reviews from customers.",
+        "It is one of the most expensive options on the market, but it is worth the price."
+      ]
+    },
+    {
+      "page_url": "https://www.jumia.com.eg/s?search-query=مكينة+قهوة",
+      "product_title": "مكينة قهوة جوميا مصر اسعار",
+      "product_image_url": "https://www.jumia.com.eg/images/jumia-logo.png",
+      "product_url": "https://www.jumia.com.eg/product/مكينة-قهوة-جوميا-مصر-اسعار-13431546.html",
+      "product_current_price": 1200.0,
+      "product_original_price": 1500.0,
+      "product_discount_percentage": 20.0,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "Bosch"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "Black"
+        },
+        {
+          "specification_name": "Material",
+          "specification_value": "Plastic"
+        },
+        {
+          "specification_name": "Size",
+          "specification_value": "10 x 6 x 8 inches"
+        },
+        {
+          "specification_name": "Weight",
+          "specification_value": "6 pounds"
+        }
+      ],
+      "agent_recommendation_rank": 1,
+      "agent_recommendation_notes": [
+        "This product is a budget-friendly coffee machine with a basic design and limited features.",
+        "It is made of low-quality materials and has a small capacity.",
+        "The product has a low rating and negative reviews from customers.",
+        "It is not recommended due to its poor quality."
+      ]
+    }
+  ]
+}
